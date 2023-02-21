@@ -10,7 +10,7 @@ export const Button: React.FC<Props> = (props) => {
   return (
     <button
       onClick={props.handleClick}
-      className="p-3 bg-blue-500 text-sm text-white rounded"
+      className="p-3 bg-red-500 text-sm text-white rounded"
     >
       {text}
     </button>

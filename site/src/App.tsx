@@ -9,11 +9,17 @@ import { Header } from "ui_components/Header";
 import { Footer } from "ui_components/Footer";
 
 const App = () => (
-  <div className="text-3xl mx-auto max-w-6xl">
-    <Header />
-    <HomeApp />
-    <PdpApp />
-    <Footer />
+  <div className="min-h-screen bg-blue-100 mx-auto flex flex-col justify-between">
+    <div>
+      <Header />
+    </div>
+    <div>
+      <HomeApp />
+      <PdpApp />
+    </div>
+    <div>
+      <Footer />
+    </div>
   </div>
 );
 
