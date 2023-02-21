@@ -1,19 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import { Footer } from "ui_components/Footer";
-import { Header } from "ui_components/Header";
+import { Button } from "ui_components/Button";
 
 import "./index.scss";
 
 export const App = () => (
-  <div className="text-3xl mx-auto max-w-6xl">
-    <Header />
-    <div>Name: pdp</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Tailwind</div>
-    <Footer />
+  <div className="m-5 text-3xl mx-auto max-w-6xl flex align-center">
+    <h1>Product Detail Page</h1>
+    <Button
+      text="button for PDP"
+      handleClick={() => console.log("hello from PDP")}
+    />
   </div>
 );
 

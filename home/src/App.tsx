@@ -1,17 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Header } from "ui_components/Header";
-import { Footer } from "ui_components/Footer";
+import { Button } from "ui_components/Button";
 
 import "./index.scss";
 
 export const App = () => (
-  <div className="text-3xl mx-auto max-w-6xl">
-    <Header />
-    <div>
-      <h1>Home</h1>
-    </div>
-    <Footer />
+  <div className="m-5 text-3xl mx-auto max-w-6xl flex align-center">
+    <h1>Home</h1>
+    <Button
+      text="Button for home"
+      handleClick={() => console.log("hello from HOME")}
+    />
   </div>
 );
 

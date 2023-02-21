@@ -46,6 +46,7 @@ module.exports = {
       remotes: {
         home: "home@http://localhost:3000/remoteEntry.js",
         pdp: "pdp@http://localhost:3001/remoteEntry.js",
+        ui_components: "ui_components@http://localhost:4444/remoteEntry.js",
       },
       exposes: {},
       shared: {
